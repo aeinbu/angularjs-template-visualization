@@ -1,0 +1,1 @@
+# Proof of concept for QA of templates in angularjs
