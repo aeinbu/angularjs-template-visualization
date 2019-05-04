@@ -1,4 +1,15 @@
-import _ from "lodash";
+import angular from "angular"
+require("font-awesome/css/font-awesome.min.css")
 
-console.log(_.camelCase("...and this JS message should be seen in the browser console!"));
+const app = angular.module("app", [])
+
+
+app.config(() => {
+	console.log("Starting AngularJS...")
+})
+
+
+require("./components")
+
+
 

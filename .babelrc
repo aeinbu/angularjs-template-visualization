@@ -3,6 +3,8 @@
 		["@babel/preset-env", {"modules": false}]
 	],
 	"plugins": [
-		["@babel/plugin-proposal-object-rest-spread"]
+		"angularjs-annotate",
+		"@babel/plugin-proposal-private-methods",
+		["@babel/plugin-proposal-pipeline-operator", { "proposal": "smart" }]
 	]
 }

@@ -1,0 +1,23 @@
+<style>
+    .framed {
+        border: 1px solid gray;
+        padding: 0 1em .5em 1em
+    }
+
+    .thumbnail-size {
+        width: 30em;
+    }
+</style>
+
+<div class="framed thumbnail-size">
+    <h2>
+        <i class="fa fa-cubes"></i>
+        {{$ctrl.itemNumber}}
+        <i class="fa fa-warning"
+           style="color: orangered; float: right;"
+           ng-if="$ctrl.hasNonConformances"></i>
+    </h2>
+    <p>
+        {{$ctrl.itemName}}
+    </p>
+</div>

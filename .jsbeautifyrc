@@ -1,0 +1,6 @@
+{
+	"html": {
+		"wrap_attributes": "preserve-aligned",
+		"indent_body_inner_html": true
+	}
+}

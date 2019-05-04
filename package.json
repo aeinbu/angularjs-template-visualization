@@ -8,7 +8,8 @@
     "clean": "rimraf dist/*",
     "build": "npm run clean && webpack --config webpack.production.config",
     "watch": "webpack --config webpack.development.config.js --watch",
-    "start": "webpack-dev-server --config webpack.webpack-dev-server.config.js"
+    "start": "webpack-dev-server --config webpack.webpack-dev-server.config.js",
+    "ui-test": "webpack-dev-server --port 8081 --config webpack.ui-test-server.js"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,6 @@
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.4.4",
-    "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
     "babel-loader": "^8.0.5",
     "css-loader": "^2.1.1",
@@ -38,8 +38,13 @@
     "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
+    "@babel/plugin-proposal-pipeline-operator": "^7.3.2",
+    "@babel/plugin-proposal-private-methods": "^7.4.4",
+    "angular": "^1.7.8",
+    "babel-plugin-angularjs-annotate": "^0.10.0",
     "bootstrap": "^4.3.1",
     "font-awesome": "^4.7.0",
-    "lodash": "^4.17.11"
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0"
   }
 }
