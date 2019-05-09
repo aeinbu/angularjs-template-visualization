@@ -1,0 +1,14 @@
+body {
+    font-family: sans-serif;
+}
+
+pre {
+    border: 1px solid gray;
+    padding: .5em;
+}
+
+pre,
+.monospace {
+    background-color: lightgrey;
+    font-family: monospace;
+}

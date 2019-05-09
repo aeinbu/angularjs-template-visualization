@@ -1,0 +1,10 @@
+<ul>
+    <li ng-repeat="test in $ctrl.tests">
+        <a href="#/{{test.templateToTest}}"
+           class="monospace">
+            {{test.title || test.templateToTest}}
+        </a>
+    </li>
+</ul>
+
+<template-tester test="$ctrl.selectedTest"/>

@@ -2,5 +2,8 @@
 	"html": {
 		"wrap_attributes": "preserve-aligned",
 		"indent_body_inner_html": true
-	}
+	},
+	"brace_style": "collapse,preserve-inline",
+	"operator_position": "preserve-newline",
+	"end_with_newline": true
 }

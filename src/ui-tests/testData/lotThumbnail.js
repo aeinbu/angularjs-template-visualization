@@ -1,6 +1,6 @@
-{
+module.exports = {
 	"title": "lotThumbnail",
-	"templateToTest": "lotThumbnail",
+	"templateToTest": require("../../components/lotThumbnail.html"),
 	"testData": [{
 		"itemName": "langt-item-navn",
 		"itemNumber": "11223344",

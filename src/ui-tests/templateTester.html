@@ -1,0 +1,7 @@
+<h2>Test of {{$ctrl.test.title}}</h2>
+
+<div ng-repeat="sample in $ctrl.test.testData">
+    <pre>{{sample | json}}</pre>
+    <test-template-holder template-to-test="$ctrl.test.templateToTest"
+                          test-data="sample" />
+</div>
