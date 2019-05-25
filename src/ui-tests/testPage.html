@@ -1,8 +1,8 @@
 <ul>
     <li ng-repeat="test in $ctrl.tests">
-        <a href="#/{{test.templateToTest}}"
+        <a href="#/{{test.title}}"
            class="monospace">
-            {{test.title || test.templateToTest}}
+            {{test.title}}
         </a>
     </li>
 </ul>

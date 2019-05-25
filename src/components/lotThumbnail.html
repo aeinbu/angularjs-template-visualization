@@ -11,8 +11,6 @@
 </style>
 
 <div class="framed thumbnail-size">
-    <pre>$ctrl: {{$ctrl}}</pre>
-    <pre>this: {{this}}</pre>
     <h2>
         <i class="fa fa-cubes"></i>
         Item Number:
@@ -24,11 +22,11 @@
     <p>
         {{$ctrl.itemName}}
     </p>
-    <p>
 
-    </p ng-if="$ctrl.listOfNumbers && $ctrl.listOfNumbers.length > 0 ">
-    List of numbers:
-    <ul >
-        <li ng-repeat="number in $ctrl.listOfNumbers">{{number}}</li>
-    </ul>
+    <p ng-if="$ctrl.listOfNumbers && $ctrl.listOfNumbers.length > 0 ">
+        List of numbers:
+        <ul>
+            <li ng-repeat="number in $ctrl.listOfNumbers">{{number}}</li>
+        </ul>
+    </p>
 </div>

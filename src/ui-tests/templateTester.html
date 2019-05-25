@@ -1,7 +1,15 @@
+<style>
+.sample + .sample {
+    margin: 1em 0;
+    border-top: 2px dashed red;
+}
+</style>
+
 <h2>Test of {{$ctrl.test.title}}</h2>
 
-<div ng-repeat="sample in $ctrl.test.testData">
+<div ng-repeat="sample in $ctrl.test.testData"
+     class="sample">
     <pre>{{sample | json}}</pre>
     <test-template-holder template-to-test="$ctrl.test.templateToTest"
-                          test-data="sample" />
+                           $ctrl="sample" />
 </div>
