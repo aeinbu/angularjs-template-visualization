@@ -8,4 +8,5 @@
     </li>
 </ul>
 
-<template-tester test="$ctrl.selectedTest" />
+<test-view ng-if="$ctrl.selectedTest !== undefined"
+           test="$ctrl.selectedTest" />

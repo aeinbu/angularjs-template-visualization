@@ -1,0 +1,7 @@
+<h2>Test of {{$ctrl.test.title}}</h2>
+
+<div ng-repeat="sample in $ctrl.test.samples"
+     class="sample">
+    <single-test-view template-to-test="$ctrl.test.templateToTest"
+                      sample="sample" />
+</div>

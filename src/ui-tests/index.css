@@ -12,3 +12,13 @@ pre,
     background-color: lightgrey;
     font-family: monospace;
 }
+
+.sample {
+    margin: 1em 0;
+    border-top: 2px dashed red;
+}
+
+.warning {
+    font-style: italic;
+    color: red;
+}

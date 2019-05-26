@@ -7,10 +7,7 @@ angular
 		controller() {
 			const $ctrl = {}
 
-			$ctrl.tests = [
-				require("./testData/lotThumbnail.js"),
-				require("./testData/serializedThumbnail.js")
-			]
+			$ctrl.tests = require("./testData")
 
 			$ctrl.selectedTest = undefined
 

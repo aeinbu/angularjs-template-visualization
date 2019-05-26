@@ -8,11 +8,10 @@ module.component("lotThumbnail", {
         this.itemName = "Superlim"
         this.itemNumber = "950013"
         this.hasNonConformances = true
+        this.registeredLots = [
+            "LOT0001",
+            "LOT0002",
+        ]
 
-        // return {
-        //     itemName: "Superlim2",
-        //     itemNumber: "950013",
-        //     hasNonConformances: true
-        // }
     }
 })

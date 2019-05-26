@@ -1,16 +1,8 @@
 import angular from "angular"
-import _ from "lodash"
-
 
 angular
     .module("ui-tests")
-    .component("templateTester", {
-        bindings: {
-            test: "<"
-        },
-        template: require("./templateTester.html")
-    })
-    .directive("testTemplateHolder", function($compile, $rootScope) {
+    .directive("templateRenderer", function($compile) {
         return {
             restrict: "E",
             scope: {

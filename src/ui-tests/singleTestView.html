@@ -1,0 +1,22 @@
+<pre>{{$ctrl.sample | json}}</pre>
+
+<div ng-if="$ctrl.missingProps.length > 0">
+    The sample is missing:
+    <span ng-repeat="prop in $ctrl.missingProps">
+          <span class="monospace">"{{prop}}"</span>
+    </span>
+</div>
+
+<div ng-if="$ctrl.unusedProps.length > 0">
+    These properties are not used:
+    <span ng-repeat="prop in $ctrl.unusedProps">
+        <span class="monospace">"{{prop}}"</span>
+    </span>
+</div>
+
+<div ng-if="$ctrl.missingProps.length > 0 || $ctrl.unusedProps.length > 0"
+     style="height: 1em;">
+</div>
+
+<template-renderer template-to-test="$ctrl.templateToTest"
+                   $ctrl="$ctrl.sample" />
