@@ -5,15 +5,19 @@ angular
 	.component("testPage", {
 		template: require("./testPage.html"),
 		controller() {
+			const $ctrl = {}
 
-			let tests = [
-				require("./testData/lotThumbnail.js")
+			$ctrl.tests = [
+				require("./testData/lotThumbnail.js"),
+				require("./testData/serializedThumbnail.js")
 			]
-			let selectedTest = tests[0]
 
-			return {
-				tests,
-				selectedTest
+			$ctrl.selectedTest = undefined
+
+			$ctrl.onSelect = (test) => {
+				$ctrl.selectedTest = test
 			}
+
+			return $ctrl;
 		}
 	})

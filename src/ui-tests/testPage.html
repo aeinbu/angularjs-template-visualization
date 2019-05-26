@@ -1,10 +1,11 @@
 <ul>
     <li ng-repeat="test in $ctrl.tests">
-        <a href="#/{{test.title}}"
+        <a href="#"
+           ng-click="$ctrl.onSelect(test)"
            class="monospace">
             {{test.title}}
         </a>
     </li>
 </ul>
 
-<template-tester test="$ctrl.selectedTest"/>
+<template-tester test="$ctrl.selectedTest" />

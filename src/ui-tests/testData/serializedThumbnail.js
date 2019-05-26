@@ -1,8 +1,8 @@
 module.exports = {
-	"title": "lotThumbnail",
-	"templateToTest": require("../../components/lotThumbnail.html"),
+	"title": "serializedThumbnail",
+	"templateToTest": require("../../components/serializedThumbnail.html"),
 	"testData": [{
-		"itemName": "langt-lot-item-navn",
+		"itemName": "langt-sn-item-navn",
 		"itemNumber": "11223344",
 		"quantity" : 1,
 		"hasNonConformances": true,

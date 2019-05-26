@@ -1,2 +1,3 @@
 require("./lotThumbnail")
+require("./serializedThumbnail")
 
